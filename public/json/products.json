@@ -1,0 +1,17 @@
+[
+    {
+        "id" : 201,
+        "name" : "cep telefonu",
+        "price" : 345
+    },
+    {
+        "id" : 202,
+        "name" : "bilgisayar",
+        "price" : 6000
+    },
+    {
+        "id" : 203,
+        "name" : "tablet",
+        "price" : 895
+    }
+]
