@@ -14,9 +14,15 @@ import { ObjectComponent } from './ObjectComponent';
 import PrimarySearchAppBar from './PrimarySearchAppBar';
 import BasicPagination from './BasicPagination';
 import BasicSpeedDial from './BasicSpeedDial';
+import { HolderComponent } from './redux/HolderComponent';
+import { Provider } from 'react-redux';
+import store from './redux/CoreStore';
+import ComboComponent from './advanced/ComboComponent';
+import { FormikUse } from './formik/FormikComponent';
 
 function App() {
   return (
+    <Provider store={store}>
     <div className="App">
       <header className="App-header">
       <PrimarySearchAppBar/>
@@ -35,11 +41,16 @@ function App() {
         <ObjectComponent/>
         <BasicPagination/>
         <BasicSpeedDial/>
+        <HolderComponent/>
+        <ComboComponent/>
+
+        <FormikUse/>
         
 
         
       </header>
     </div>
+    </Provider>
   );
 }
 
